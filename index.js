@@ -10,7 +10,7 @@ const backSolve = async (L, b) => {
 
   bufferOut.set(buffer.get(n - 1) / Lbuffer.get(n - 1, n - 1), n - 1)
   for (let i = n - 2; i >= 0; i--) {
-    const Ls = tfc.slice(tfc.gather(L, i, 1), i + 1, n - i - 1).reshape([1, n - i - 1])
+    const Ls = tfc.slice(tfc.gather(L, i), i + 1, n - i - 1).reshape([1, n - i - 1])
     const bs = bufferOut.toTensor().slice(i + 1, n - i - 1).reshape([n - i - 1, 1])
     const t = tfc.matMul(Ls, bs).asScalar()
     const diag = tfc.gather(L, i).as1D().gather(i).asScalar()
