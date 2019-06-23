@@ -1,6 +1,6 @@
 {
   "name": "tfjs-backsolve",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Backward solve in tensorflow JS",
   "main": "index.js",
   "scripts": {
