@@ -9,7 +9,7 @@
   "author": "Dirk Schumacher <mail@dirk-schumacher.net>",
   "license": "MIT",
   "dependencies": {
-    "@tensorflow/tfjs-core": "^1.2.1"
+    "@tensorflow/tfjs-core": "^4.5.0"
   },
   "devDependencies": {
     "tap-min": "^2.0.0",
